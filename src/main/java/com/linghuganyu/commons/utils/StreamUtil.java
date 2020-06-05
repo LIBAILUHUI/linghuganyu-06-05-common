@@ -62,4 +62,14 @@ public class StreamUtil {
 		return readTextFile(new FileInputStream(txtFile));
 	
 	}
+	
+	//测试流工具类
+	public static void main(String[] args) {
+		try {
+			//调用最后一个方法，包含前两个方法
+			System.out.println(readTextFile(new File("f:/test.txt")));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
 }
